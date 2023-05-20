@@ -13,17 +13,14 @@ public:
     int median(vector<vector<int>>& matrix, int R, int C) {
     vector<int> elements;
     
-    // Flatten the matrix into a single vector
     for (int i = 0; i < R; i++) {
         for (int j = 0; j < C; j++) {
             elements.push_back(matrix[i][j]);
         }
     }
     
-    // Sort the elements vector
     sort(elements.begin(), elements.end());
     
-    // Calculate the median
     int size = elements.size();
     int mid = size / 2;
     return elements[mid];
