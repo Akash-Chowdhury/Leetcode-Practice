@@ -58,7 +58,8 @@ class Solution
                if(curr->left!=NULL) q.push(curr->left);
                if(curr->right!=NULL) q.push(curr->right);
            }
-           ans.push_back(v[v.size()-1]);
+           ans.push_back(v[v.size()-1]);  // for right view
+           //ans.push_back(v[0]);  // for left  view
        }
        return ans;
     }
